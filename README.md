@@ -1,4 +1,3 @@
-# Xilinx-Vivado-installation-in-Ubuntu-22.04
 # Xilinx Vivado 2024.2 Installation Guide on Ubuntu 22.04
 
 This README provides step-by-step instructions to install **Xilinx Vivado 2024.2** on Ubuntu 22.04, focusing on a minimal installation for Verilog/VHDL design, simulation, synthesis, and bitstream generation. This setup excludes embedded software tools like Vitis.
