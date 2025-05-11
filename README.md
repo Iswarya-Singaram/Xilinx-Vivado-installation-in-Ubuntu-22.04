@@ -21,7 +21,6 @@ sudo apt update
 sudo apt install -y libtinfo5 libncurses5 libncursesw5 libtinfo6 libncurses6
 libc6-dev-i386 g++ unzip make graphviz xvfb git net-tools
 ~~~
-text
 
 ---
 
@@ -32,6 +31,9 @@ text
 3. Download the file:  
    `FPGAs_AdaptiveSoCs_Unified_2024.2_1113_1001_Lin64.bin`  
    Save it to your `~/Downloads` folder.
+   <p align=center>
+<img src="https://github.com/user-attachments/assets/1aca2102-a39f-42ce-8ac8-17b54c8042ff" height="300">
+</p>
 
 ---
 
@@ -41,7 +43,6 @@ cd ~/Downloads
 chmod +x FPGAs_AdaptiveSoCs_Unified_2024.2_1113_1001_Lin64.bin
 sudo ./FPGAs_AdaptiveSoCs_Unified_2024.2_1113_1001_Lin64.bin
 ~~~
-text
 
 - The GUI installer will launch.
 
@@ -50,19 +51,44 @@ text
 ## Step 4: Select Installation Options
 
 - Accept all license agreements.
+
 - Under **Design Tools**:
   - ✔️ Select **Vivado** only.
   - ❌ Deselect all Vitis-related tools (Vitis HLS, Networking, Embedded Dev, etc.).
+ 
+    <p align=center>
+<img src="https://github.com/user-attachments/assets/6367aa88-6904-45d5-be56-cf5c0a72199a">
+</p>
+
 - Under **Editions**:
   - ✔️ Select **Vivado ML Standard** (free, no license required).
   - ❌ Do NOT select Vivado ML Enterprise unless you have a paid license.
+
+    <p align=center>
+<img src="https://github.com/user-attachments/assets/1c014697-55c8-4098-92d8-3111cab325d5">
+</p>
+
 - Under **Devices**:
   - ✔️ Select **7 Series (limited support)** (includes Spartan-7, Artix-7, Zynq-7000).
   - ❌ Deselect UltraScale, Versal, SoCs, Kria, etc.
-- Choose the install directory (default `/tools/Xilinx` recommended).
-- Check both license agreement boxes.
-- Click **Next** and proceed with installation.
 
+    <p align=center>
+<img src="https://github.com/user-attachments/assets/3fd373e9-c890-47f3-b44f-1623640c90a5">
+</p>
+
+- Choose the install directory (default `/tools/Xilinx` recommended).
+
+  <p align=center>
+<img src="https://github.com/user-attachments/assets/b0b3387a-9745-4a76-89c9-526c0924c66f">
+</p>
+
+- Check both license agreement boxes.
+
+  <p align=center>
+<img src="https://github.com/user-attachments/assets/3ab35a4c-17b5-4164-a9eb-fd9d377ff598">
+</p>
+
+- Click **Next** and proceed with installation.
 ---
 
 ## Step 5: Launch Vivado
@@ -71,17 +97,35 @@ cd /tools/Xilinx/Vivado/2024.2/bin
 ./vivado
 ~~~
 
-text
-
 ---
 
 ## Step 6: Create Your First Project
 
 1. Click **Create New Project**.
 2. Enter project name and select a folder in your home directory (e.g., `~/vivado_projects`).
+
+ <p align=center>
+<img src="https://github.com/user-attachments/assets/fa023809-f796-4d81-83a2-6aeed39dc884">
+</p>
+
 3. Choose **RTL Project**.
+   
+   <p align=center>
+<img src="https://github.com/user-attachments/assets/6f00a143-bd20-45bf-ac41-b0d1b4ce066d" >
+</p>
+
 4. Check **Do not specify sources at this time**.
+
+   <p align=center>
+<img src="https://github.com/user-attachments/assets/6f00a143-bd20-45bf-ac41-b0d1b4ce066d">
+</p>
+
 5. Select a target device (e.g., Spartan-7 `xc7k70tfbg676-1`) for simulation and schematic viewing.
+
+   <p align=center>
+<img src="https://github.com/user-attachments/assets/9a244563-6fcb-440b-bfbc-2c923fb87a43">
+</p>
+
 6. Finish project creation.
 
 ---
